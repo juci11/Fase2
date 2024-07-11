@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makima</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: green;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('F1.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar a.active {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .content img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+
+        .text {
+            max-width: 450px;
+            margin-right: 20px;
+        }
+
+        .text h1 {
+            font-size: 48px;
+            margin: 0;
+            font-family: 'Arial Black', sans-serif;
+            color: #333;
+        }
+
+        .text h2 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #999;
+            margin: 10px 0;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .text a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .text a:hover {
+            text-decoration: underline;
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 32px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .buttons .watch {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .buttons .watch:hover {
+            background-color: #555;
+        }
+
+        .buttons .read {
+            background-color: #fff;
+            color: #333;
+            border: 2px solid #333;
+        }
+
+        .buttons .read:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <h1>Primeira Fase</h1>
+                <p>Como Jogar:Na tela, aparecerão várias palavras.Clique apenas nas palavras que corretamente escritas.
+                Pontuação:Cada palavra correta clicada vale pontos.Ao atingir 100 pontos, você passa para a segunda fase.Boa sorte!.</p>
+                <div class="signature">Primeira fase</div>
+            </div>
+            <img src="Bruxa.png" alt="bruxa">
+        </div>
+    </div>
+</body>
+</html>
